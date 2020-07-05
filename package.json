@@ -1,0 +1,30 @@
+{
+  "name": "integrationtesting2",
+  "version": "1.0.0",
+  "description": "~/workspace/test/jessewarden/integrationTesting2",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha *.test.js --exit",
+    "integration": "mocha index.integrationtest.js --exit",
+    "start": "node index.js",
+    "coverage": "istanbul cover /Users/fab/workspace/test/jessewarden/basic-unit-testing-2/node_modules/mocha/bin/_mocha index.test.js -x *.test.js",
+    "showcoverage": "open coverage/lcov-report/index.html",
+    "nodemon": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^3.2.0",
+    "lodash": "^4.17.15",
+    "nodemon": "^2.0.4",
+    "restify": "^8.5.1",
+    "restify-clients": "^2.6.9"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-as-promised": "^7.1.1",
+    "istanbul": "^0.4.5",
+    "mocha": "^7.2.0"
+  }
+}

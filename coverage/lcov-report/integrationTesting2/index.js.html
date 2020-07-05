@@ -1,0 +1,368 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for integrationTesting2/index.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../prettify.css" />
+    <link rel="stylesheet" href="../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../index.html">all files</a> / <a href="index.html">integrationTesting2/</a> index.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">41.46% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>17/41</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">50% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>1/2</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>0/0</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">42.5% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>17/40</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102</td><td class="line-coverage quiet"><span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">const restify = require('restify')
+const _ = require('lodash')
+const log = console.log;
+&nbsp;
+const getPerson = (firstName, lastName, characterClass) =&gt; {
+<span class="cstat-no" title="statement not covered" >  return {</span>
+    firstName,
+    lastName,
+    characterClass
+  }
+}
+&nbsp;
+const getAdventureParty = () =&gt; {
+<span class="cstat-no" title="statement not covered" >  return [</span>
+    getPerson('Jesse', 'Warder', 'Bard'),
+    getPerson('Albus', 'Dumbledog', 'Thief'),
+    getPerson('Cow', 'Moo', 'cleric'),
+  ]
+}
+&nbsp;
+const getSteamPunkParty = () =&gt; {
+<span class="cstat-no" title="statement not covered" >  return [</span>
+    getPerson('Jesse', 'Warder', 'Alchemist'),
+    getPerson('Albus', 'Dumbledog', 'Troubleshooter'),
+    getPerson('Cow', 'Moo', 'Witch Doctor'),
+  ]
+}
+&nbsp;
+const getSuccessResponse = (data) =&gt; {
+<span class="cstat-no" title="statement not covered" >  return {</span>
+    result: true,
+    data
+  }
+}
+&nbsp;
+const PARTY_TYPE_ADVENTURE = 'adventure';
+const PARTY_TYPE_STEAM_PUNK = 'steampunk';
+const PARTY_TYPE_UNKNOWN = 'unknown';
+&nbsp;
+const acceptablePartyTypes = {
+  [PARTY_TYPE_ADVENTURE]: PARTY_TYPE_ADVENTURE,
+  [PARTY_TYPE_STEAM_PUNK]: PARTY_TYPE_STEAM_PUNK,
+  [PARTY_TYPE_UNKNOWN]: PARTY_TYPE_UNKNOWN,
+}
+&nbsp;
+const partyTypeFactoryMap = {
+  [PARTY_TYPE_ADVENTURE]: getAdventureParty,
+  [PARTY_TYPE_STEAM_PUNK]: getSteamPunkParty,
+  [PARTY_TYPE_UNKNOWN]: getAdventureParty,
+}
+&nbsp;
+const getPartyTypeFromRequest = (req) =&gt; {
+<span class="cstat-no" title="statement not covered" >  let result = _.get(req, 'params.party', PARTY_TYPE_UNKNOWN);</span>
+<span class="cstat-no" title="statement not covered" >  result = result.toLowerCase();</span>
+<span class="cstat-no" title="statement not covered" >  return _.get(acceptablePartyTypes, result, PARTY_TYPE_UNKNOWN)</span>
+};
+&nbsp;
+const getPeopleResponseFromRequestType = (req) =&gt; {
+<span class="cstat-no" title="statement not covered" >  const partyType = getPartyTypeFromRequest(req);</span>
+<span class="cstat-no" title="statement not covered" >  const partyMakerFunction = _.get(partyTypeFactoryMap, partyType);</span>
+<span class="cstat-no" title="statement not covered" >  const people = partyMakerFunction();</span>
+<span class="cstat-no" title="statement not covered" >  const response = getSuccessResponse(people);</span>
+<span class="cstat-no" title="statement not covered" >  return response;</span>
+}
+&nbsp;
+const startServer = () =&gt; {
+<span class="cstat-no" title="statement not covered" >  return new Promise((success, failure) =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >    const server = restify.createServer();</span>
+<span class="cstat-no" title="statement not covered" >    server.use(restify.plugins.queryParser());</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >    server.get('/api/data', (req, res) =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >      const response = getPeopleResponseFromRequestType(req);</span>
+<span class="cstat-no" title="statement not covered" >      res.send(response)</span>
+    })
+<span class="cstat-no" title="statement not covered" >    server.get('/api/ping', (req, res) =&gt; <span class="cstat-no" title="statement not covered" >res.send(getSuccessResponse('pong')))</span></span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >    server.listen(8080, () =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >      console.log('%s listening at %s', server.name, server.url);</span>
+<span class="cstat-no" title="statement not covered" >      success(server);</span>
+    })
+  })
+}
+&nbsp;
+module.exports = {
+  getPerson,
+  getAdventureParty,
+  getSteamPunkParty,
+  getSuccessResponse,
+  PARTY_TYPE_ADVENTURE,
+  PARTY_TYPE_STEAM_PUNK,
+  PARTY_TYPE_UNKNOWN,
+  acceptablePartyTypes,
+  partyTypeFactoryMap,
+  getPartyTypeFromRequest,
+  startServer,
+  getPeopleResponseFromRequestType
+}
+&nbsp;
+<span class="missing-if-branch" title="if path not taken" >I</span>if (require.main === module) {
+<span class="cstat-no" title="statement not covered" >  startServer()</span>
+}
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Sun May 24 2020 11:12:26 GMT+0800 (Hong Kong Standard Time)
+</div>
+</div>
+<script src="../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../sorter.js"></script>
+</body>
+</html>
